@@ -175,8 +175,7 @@ export default function Register() {
                                     <option value="">Select Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
-                                    <option>Non-binary</option>
-                                    <option>Prefer not to say</option>
+                                 
                                 </select>
                             </div>
 

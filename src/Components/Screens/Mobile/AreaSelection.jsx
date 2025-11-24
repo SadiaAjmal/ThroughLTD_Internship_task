@@ -104,22 +104,22 @@ const AreaSelection = () => {
     };
 
     return (
-        <main className="min-h-screen bg-white text-gray-500 px-2  flex items-start justify-center">
+        <main className="min-h-screen max-w-md w-full rounded-lg bg-white text-gray-500 px-2 py-10  flex flex-col items-center relative">
             
-            
-            <div className=" relative w-full max-w-md">
-                {/* HEADER */}
-                <button
+             <button
                     aria-label="Back"
                     onClick={() => window.history.back()}
-                    className="  absolute items-center text-primary font-medium top-0 cursor-pointer"
+                    className="  absolute items-center text-primary font-medium top-2 left-0 cursor-pointer"
                 >
                     <IoIosArrowBack className="  text-xl"/>
 
                 </button>
+          
+                {/* HEADER */}
+               
                 
                 
-                <header className="text-center my-5 ">
+                <header className="text-center mb-5">
                 
 
                     <h1 className="text-2xl font-semibold text-primary">
@@ -128,7 +128,7 @@ const AreaSelection = () => {
                 </header>
 
                 {/* FORM CARD */}
-                <section className="space-y-5">
+                <section className="space-y-5 w-full">
                     <CustomSelect
                         label="Language"
                         value={language}
@@ -179,7 +179,7 @@ const AreaSelection = () => {
                         Continue
                     </button>
                 </section>
-            </div>
+
         </main>
     );
 };

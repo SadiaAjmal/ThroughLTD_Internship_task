@@ -61,12 +61,12 @@ const VerificationCode = () => {
     };
 
     return (
-        <main className="min-h-screen bg-white px-2 py-5 flex flex-col items-center relative">
+        <main className="min-h-screen max-w-md w-full rounded-lg  bg-white px-2 py-10 flex flex-col items-center relative">
             {/* Back Button */}
             <button
                 aria-label="Back"
                 onClick={() => window.history.back()}
-                className="absolute left-0 top-0 items-center text-primary font-medium cursor-pointer flex gap-1"
+                className="absolute left-0 top-2 items-center text-primary font-medium cursor-pointer flex gap-1"
             >
                 <IoIosArrowBack className="text-xl" /> 
             </button>

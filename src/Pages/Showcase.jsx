@@ -15,7 +15,7 @@ const Showcase = () => {
     const [view, setView] = useState("desktop"); // mobile | desktop | ''
 
     return (
-        <main className="h-full bg-gray-50 py-10 ">
+        <main className="h-full bg-gray-100 py-10 ">
 
             {/* HEADER SECTION */}
             <header className="text-center mb-10">
@@ -44,31 +44,15 @@ const Showcase = () => {
 
             {/* RENDER MOBILE SCREENS */}
             {view === "mobile" && (
-                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10 gap-6">
-
-                    {/* MOBILE DEVICE FRAME */}
-                    <div className="bg-white rounded-2xl shadow-lg p-4 border">
-                        <h3 className="font-semibold text-center mb-2">Area</h3>
-                        <div className="w-full aspect-[9/19] border-2 rounded-xl overflow-hidden">
-                            <AreaSelection />
-                        </div>
-                    </div>
+                <section className="flex md:flex-row flex-col justify-center gap-10 md:px-20 px-2">
+                   
+                    <AreaSelection />
 
 
+                    <CreateAccount />
 
-                    <div className="bg-white rounded-2xl shadow-lg p-4 border">
-                        <h3 className="font-semibold text-center mb-2">Create Account</h3>
-                        <div className="w-full aspect-[9/19] border-2 rounded-xl overflow-hidden">
-                            <CreateAccount />
-                        </div>
-                    </div>
+                    <VerificationCode />
 
-                    <div className="bg-white rounded-2xl shadow-lg p-4 border">
-                        <h3 className="font-semibold text-center mb-2">Verification Code</h3>
-                        <div className="w-full aspect-[9/19] border-2 rounded-xl overflow-hidden">
-                            <VerificationCode />
-                        </div>
-                    </div>
 
                 </section>
             )}
