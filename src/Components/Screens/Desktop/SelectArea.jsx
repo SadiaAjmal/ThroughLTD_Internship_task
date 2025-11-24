@@ -116,27 +116,7 @@ export default function SelectArea() {
                     </header>
 
                     <figure className="mb-6">
-                        <svg
-                            className="w-56 h-56"
-                            viewBox="0 0 240 240"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <defs>
-                                <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stopColor="#EFF8FF" />
-                                    <stop offset="100%" stopColor="#ffffff" />
-                                </radialGradient>
-                            </defs>
-                            <rect width="240" height="240" rx="20" fill="url(#g1)" />
-                            <g transform="translate(36,56)">
-                                <rect x="8" y="36" width="136" height="76" rx="6" fill="#0A63B7" />
-                                <rect x="16" y="44" width="120" height="56" rx="4" fill="#7FB3FF" />
-                                <rect x="22" y="52" width="36" height="8" rx="2" fill="#DDEEFF" />
-                                <rect x="22" y="64" width="80" height="6" rx="2" fill="#DDEEFF" />
-                                <circle cx="124" cy="20" r="8" fill="#0A63B7" />
-                            </g>
-                        </svg>
+                   <img src="/select.jpg" alt="" className="h-40" />
                     </figure>
 
                     <footer>

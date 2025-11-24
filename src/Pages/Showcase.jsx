@@ -1,12 +1,4 @@
-/**
- * SHOWCASE PAGE
- * -------------------------------------------
- * Shows 2 categories:
- * - Mobile UI Screens
- * - Desktop UI Screens
- * -------------------------------------------
- * Mentor/HR clicks a button → relevant UI loads.
- */
+
 
 import React, { useState } from "react";
 
@@ -20,10 +12,10 @@ import SelectArea from "../Components/Screens/Desktop/SelectArea";
 import Register from "../Components/Screens/Desktop/Register";
 
 const Showcase = () => {
-    const [view, setView] = useState(""); // mobile | desktop | ''
+    const [view, setView] = useState("desktop"); // mobile | desktop | ''
 
     return (
-        <main className="h-full bg-gray-100">
+        <main className="h-full bg-gray-50 py-10 ">
 
             {/* HEADER SECTION */}
             <header className="text-center mb-10">
@@ -37,14 +29,14 @@ const Showcase = () => {
             <section className="flex justify-center gap-5 mb-10">
                 <button
                     onClick={() => setView("mobile")}
-                    className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold shadow-md hover:bg-blue-700"
+                    className="px-6 py-3 bg-primary text-white rounded-sm font-semibold shadow-md hover:bg-primary/90 cursor-pointer"
                 >
                     📱 Mobile Screens
                 </button>
 
                 <button
                     onClick={() => setView("desktop")}
-                    className="px-6 py-3 bg-gray-800 text-white rounded-xl font-semibold shadow-md hover:bg-gray-900"
+                    className="px-6 py-3 bg-secondary text-white rounded-sm font-semibold shadow-md hover:bg-secondary/90 cursor-pointer"
                 >
                     🖥️ Desktop Screens
                 </button>
@@ -52,7 +44,7 @@ const Showcase = () => {
 
             {/* RENDER MOBILE SCREENS */}
             {view === "mobile" && (
-                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10 gap-6">
 
                     {/* MOBILE DEVICE FRAME */}
                     <div className="bg-white rounded-2xl shadow-lg p-4 border">
@@ -62,7 +54,7 @@ const Showcase = () => {
                         </div>
                     </div>
 
-                    
+
 
                     <div className="bg-white rounded-2xl shadow-lg p-4 border">
                         <h3 className="font-semibold text-center mb-2">Create Account</h3>
@@ -84,10 +76,10 @@ const Showcase = () => {
             {/* RENDER DESKTOP SCREENS */}
             {view === "desktop" && (
                 <section className="h-auto gap-10">
- <SelectArea />
-                   
- <Register />
-                  
+                    <SelectArea />
+
+                    <Register />
+
 
                 </section>
             )}
